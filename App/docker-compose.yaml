@@ -1,0 +1,36 @@
+
+services:
+  mongo:
+    image: mongo
+    volumes:
+      - data:/data/db
+
+  backend:
+    build: ./backend
+    ports:
+      - "4000:4000"
+    environment:
+      - JWT_SECRET=KevinJasani
+    depends_on:
+      - mongo
+    volumes:
+      - logs:/app/logs
+      - ./backend:/app
+      - /app/node_modules
+
+  frontend:
+    build: ./frontend
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./frontend/src:/app/src
+    stdin_open: true
+    tty: true
+    depends_on:
+      - backend
+    environment:
+      - REACT_APP_BACKEND_URL=http://localhost:4000
+
+volumes:
+  data:
+  logs:

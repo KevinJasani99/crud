@@ -1,0 +1,124 @@
+/* styles/App.css or styles/Home.module.css */
+
+/* General styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f7f6;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  font-size: 2.5em;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 1em;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #5cb85c;
+  color: white;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #4cae4c;
+}
+
+/* Styling for input fields */
+input {
+  width: 100%;
+  padding: 10px;
+  font-size: 1em;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+input:focus {
+  outline: none;
+  border-color: #66afe9;
+}
+
+/* Authentication form styling */
+.auth-form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.auth-form form {
+  margin-bottom: 10px;
+}
+
+.auth-form input {
+  width: 60%;
+  margin: 10px 0;
+}
+
+.auth-form p {
+  margin: 10px 0;
+}
+
+/* List items styling */
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  background-color: #f9f9f9;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.listing {
+  font-size: 1.2em;
+  color: #333;
+}
+
+button {
+  background-color: #d9534f;
+  margin-left: 10px;
+}
+
+button:hover {
+  background-color: #c9302c;
+}
+
+/* Styling for Toast notifications */
+.Toastify__toast-container {
+  top: 20px;
+}
+
+.Toastify__toast {
+  background-color: #d9534f;
+}
+
+.auth-error {
+  color: red;
+}
